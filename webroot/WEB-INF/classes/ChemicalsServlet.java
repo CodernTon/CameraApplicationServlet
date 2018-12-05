@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
+import java.util.*;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 import java.sql.*;
@@ -28,11 +29,19 @@ public class ChemicalsServlet extends HttpServlet {
     out.println("<html><head><title>Chemicals servlet</title></head>");
     out.println("<body>");
     out.println("Stuff about chemicals." + "<br />");
+    String chemical =  request.getParameter("name");
+        out.println(chemical);
 
     try{
       Connection con = DriverManager.getConnection("jdbc:sqlite:kemi.db");
       Statement stm  = con.createStatement();
-      ResultSet rs   = stm.executeQuery("SELECT name FROM chemical");
+      StringBuilder sb = new StringBuilder();
+      sb.append("SELECT * from chemical WHERE name='");
+      sb.append(chemical);
+      sb.append("';");
+      String sql = sb.toString();
+      System.out.println(sql);
+      ResultSet rs   = stm.executeQuery(sql);
       while(rs.next()){
         out.println(rs.getString("name") + "<br />");
       }
