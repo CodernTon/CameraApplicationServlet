@@ -1,5 +1,4 @@
 
-
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
@@ -10,6 +9,8 @@ import java.util.*;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 import java.sql.*;
+
+import classes.domain.Chemical;
 
 public class ChemicalsServlet extends HttpServlet {
 
@@ -55,7 +56,8 @@ public class ChemicalsServlet extends HttpServlet {
       System.out.println(sql);
       ResultSet rs   = stm.executeQuery(sql);
       while(rs.next()){
-        out.println(rs.getString("name") + "<br />");
+        Chemical chem = new Chemical(rs.getString("name"), rs.getString("chemical_group"));
+        out.println(chem);
       }
     }catch(SQLException sqle)
     {out.println("Database error: " + sqle.getMessage());
