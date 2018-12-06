@@ -13,6 +13,7 @@ import java.sql.*;
 
 public class ChemicalsServlet extends HttpServlet {
 
+
   public void init() throws ServletException {
     try{
       Class.forName("org.sqlite.JDBC");
@@ -29,8 +30,20 @@ public class ChemicalsServlet extends HttpServlet {
     out.println("<html><head><title>Chemicals servlet</title></head>");
     out.println("<body>");
     out.println("Stuff about chemicals." + "<br />");
-    String chemical =  request.getParameter("name");
-        out.println(chemical);
+  String chemical =  request.getParameter("name");
+    //  out.println("Value from pair: " + chemical);
+
+  //SKAPA LOOP FÖR ATT GÅ IGENOM FLER NYCKEL-VÄRDEPAR MED SAMMA NYCKEL
+  Map<String, String[]> map =
+     request.getParameterMap();
+
+  for (Map.Entry<String, String[]> entry : map.entrySet()) {
+    out.println(" * key / value: " + entry.getKey() + " / " + entry.getValue()[0] + "<br />");
+    if (entry.getKey()=="name") {
+      String value = entry.getValue()[0];
+      out.println(value);
+    }
+  }
 
     try{
       Connection con = DriverManager.getConnection("jdbc:sqlite:kemi.db");
