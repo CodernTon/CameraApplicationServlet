@@ -29,7 +29,6 @@ public class ChemicalsServlet extends HttpServlet {
     PrintWriter out = response.getWriter();
     out.println("<html><head><title>Chemicals servlet</title></head>");
     out.println("<body>");
-    out.println("Stuff about chemicals." + "<br />");
   String chemical =  request.getParameter("name");
     //  out.println("Value from pair: " + chemical);
 
