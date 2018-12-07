@@ -6,14 +6,16 @@ import java.io.PrintWriter;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.util.*;
+import java.io.*;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 import java.sql.*;
 
-import classes.domain.Chemical;
+import org.json.*;
+
+import domain.Chemical;
 
 public class ChemicalsServlet extends HttpServlet {
-
 
   public void init() throws ServletException {
     try{
@@ -31,17 +33,17 @@ public class ChemicalsServlet extends HttpServlet {
     out.println("<html><head><title>Chemicals servlet</title></head>");
     out.println("<body>");
   String chemical =  request.getParameter("name");
-    //  out.println("Value from pair: " + chemical);
 
-  //SKAPA LOOP FÖR ATT GÅ IGENOM FLER NYCKEL-VÄRDEPAR MED SAMMA NYCKEL
   Map<String, String[]> map =
      request.getParameterMap();
 
   for (Map.Entry<String, String[]> entry : map.entrySet()) {
     out.println(" * key / value: " + entry.getKey() + " / " + entry.getValue()[0] + "<br />");
-    if (entry.getKey()=="name") {
-      String value = entry.getValue()[0];
-      out.println(value);
+    if (entry.getKey().equals("name")) {
+      for (int i=0; i<entry.getValue().length; i++) {
+        String value = entry.getValue()[i];
+        out.println(" ----" + value);
+      }
     }
   }
 
@@ -49,6 +51,7 @@ public class ChemicalsServlet extends HttpServlet {
       Connection con = DriverManager.getConnection("jdbc:sqlite:kemi.db");
       Statement stm  = con.createStatement();
       StringBuilder sb = new StringBuilder();
+      List<Chemical> chemList = new ArrayList<>();
       sb.append("SELECT * from chemical WHERE name='");
       sb.append(chemical);
       sb.append("';");
@@ -57,7 +60,15 @@ public class ChemicalsServlet extends HttpServlet {
       ResultSet rs   = stm.executeQuery(sql);
       while(rs.next()){
         Chemical chem = new Chemical(rs.getString("name"), rs.getString("chemical_group"));
-        out.println(chem);
+        //out.println(chem);
+        //JSONArray JSONArray = new JSONArray();
+        JSONObject JSONChemical = new JSONObject();
+        JSONChemical.put("name", chem.name());
+        JSONChemical.put("chemical_group", chem.chemGroup());
+        //JSONArray.put(JSONChemical);
+        String json = JSONChemical.toString(2);
+        out.println(json);
+
       }
     }catch(SQLException sqle)
     {out.println("Database error: " + sqle.getMessage());
