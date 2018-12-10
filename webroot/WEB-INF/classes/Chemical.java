@@ -1,4 +1,4 @@
-package domain;
+//package domain;
 
 public class Chemical {
   private String name;
