@@ -37,8 +37,9 @@ public class JsonFormatter {
         Chemical chem = new Chemical(rs.getString("name"), rs.getString("chemical_group"));
         chemicals.add(chem);
       }
-    }catch(SQLException sqle)
-    {System.out.println("Database error: " + sqle.getMessage());
+    }catch(SQLException sqle)  {
+      System.out.println("Database error: " + sqle.getMessage());
+    }
   }
 
   public JSONObject JSONChemical(Chemical chemical) {
@@ -48,7 +49,7 @@ public class JsonFormatter {
     return JSONChemical;
   }
 
-  public String format(List<Chemical> chemical) {
+  public String format(List<Chemical> chemicals) {
     JSONArray JSON = new JSONArray();
     for (Chemical chemical : chemicals) {
       JSON.put(JSONChemical(chemical));
@@ -56,8 +57,7 @@ public class JsonFormatter {
     return JSON.toString(2);
   }
 
-  String JSON = format(chemicals);
-  System.out.println(JSON);
+//  String JSONString = format(chemicals);
+//s§  System.out.println(JSONString);
 
-}
 }
