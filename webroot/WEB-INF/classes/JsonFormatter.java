@@ -14,40 +14,50 @@ import org.json.*;
 public class JsonFormatter {
   public static void main(String [] args) {
 
-  try{
-    Class.forName("org.sqlite.JDBC");
-  }catch(ClassNotFoundException cnfe){
-    System.err.println("Could not load driver: "+cnfe.getMessage());
-  }
-
-  String chemical = args[0];
-
-  try{
-    Connection con = DriverManager.getConnection("jdbc:sqlite:kemi.db");
-    Statement stm  = con.createStatement();
-    StringBuilder sb = new StringBuilder();
-    sb.append("SELECT * from chemical WHERE name='");
-    sb.append(chemical);
-    sb.append("';");
-    String sql = sb.toString();
-    System.out.println(sql);
-    ResultSet rs   = stm.executeQuery(sql);
-    while(rs.next()){
-      String name = rs.getString("name");
-      String chemGroup = rs.getString("chemical_group");
-      //out.println(chem);
-      //JSONArray JSONArray = new JSONArray();
-      JSONObject JSONChemical = new JSONObject();
-      JSONChemical.put("name", name);
-      JSONChemical.put("chemical_group", chemGroup);
-      //JSONArray.put(JSONChemical);
-      //String json = JSONChemical.toString(2);
-      System.out.println(JSONChemical.toString());
-
+    try{
+      Class.forName("org.sqlite.JDBC");
+    }catch(ClassNotFoundException cnfe){
+      System.err.println("Could not load driver: "+cnfe.getMessage());
     }
-  }catch(SQLException sqle)
-  {System.out.println("Database error: " + sqle.getMessage());
-}
 
+    String chemicalArg = args[0];
+    List<Chemical> chemicals = new ArrayList<>();
+
+    try{
+      Connection con = DriverManager.getConnection("jdbc:sqlite:kemi.db");
+      Statement stm  = con.createStatement();
+      StringBuilder sb = new StringBuilder();
+      sb.append("SELECT * from chemical WHERE name='");
+      sb.append(chemicalArg);
+      sb.append("';");
+      String sql = sb.toString();
+      System.out.println(sql);
+      ResultSet rs   = stm.executeQuery(sql);
+      while(rs.next()){
+        Chemical chem = new Chemical(rs.getString("name"), rs.getString("chemical_group"));
+        chemicals.add(chem);
+      }
+    }catch(SQLException sqle)
+    {System.out.println("Database error: " + sqle.getMessage());
   }
+
+  public JSONObject JSONChemical(Chemical chemical) {
+    JSONObject JSONChemical = new JSONObject();
+    JSONChemical.put("name", chemical.name());
+    JSONChemical.put("chemical_group", chemical.chemGroup());
+    return JSONChemical;
+  }
+
+  public String format(List<Chemical> chemical) {
+    JSONArray JSON = new JSONArray();
+    for (Chemical chemical : chemicals) {
+      JSON.put(JSONChemical(chemical));
+    }
+    return JSON.toString(2);
+  }
+
+  String JSON = format(chemicals);
+  System.out.println(JSON);
+
+}
 }
