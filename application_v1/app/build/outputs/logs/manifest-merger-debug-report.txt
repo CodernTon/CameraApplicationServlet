@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:2:1-46:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/a6e03b4e34ec1d392ba5b6dd591a3cca/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5068ffdf212d3dcf7871845e9609ea0d/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-vision:16.2.0] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/play-services-vision-16.2.0.aar/625de7f7c275f22e00876616e8162928/AndroidManifest.xml:2:1-9:12
@@ -41,41 +41,41 @@ MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/antonlyngf
 MERGED from [com.android.support:print:28.0.0] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/8ee2e10efa301bed7cfc29f74aae4ce4/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/42c828063d6d201fab477add202ec641/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/8ff2e64e9595f9394873531647116f5d/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:2:1-46:12
 	package
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:3:5-55
-		INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:3:5-55
+		INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:2:1-43:12
-		INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:2:1-46:12
+		INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:2:1-43:12
-		INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:2:1-46:12
+		INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.CAMERA
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:5:5-64
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:5:5-64
 	android:name
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:5:22-62
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:5:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:6:5-81
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:6:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:7:5-79
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:7:22-77
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:7:22-77
 uses-permission#android.permission.INTERNET
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:8:5-66
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:8:5-66
 	android:name
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:8:22-64
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:8:22-64
 application
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:11:5-41:19
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:11:5-44:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5068ffdf212d3dcf7871845e9609ea0d/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5068ffdf212d3dcf7871845e9609ea0d/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-vision:16.2.0] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/play-services-vision-16.2.0.aar/625de7f7c275f22e00876616e8162928/AndroidManifest.xml:7:5-20
@@ -103,73 +103,81 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/antonlyngfel
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7d92fb6260f6efd53602c182e4157568/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:14:9-41
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:15:9-54
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:13:9-43
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:17:9-40
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:17:9-40
 provider#android.support.v4.content.FileProvider
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:18:9-26:20
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:18:9-26:20
 	android:grantUriPermissions
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:22:13-47
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:22:13-47
 	android:authorities
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:19:13-84
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:19:13-84
 	android:exported
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:21:13-37
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:20:13-67
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:20:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:23:13-111
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:23:13-111
 	android:resource
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:23:75-109
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:23:75-109
 	android:name
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:23:24-74
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:23:24-74
 meta-data#com.google.android.gms.vision.DEPENDENCIES
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:24:13-25:49
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:24:13-25:49
 	android:value
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:25:17-36
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:25:17-36
 	android:name
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:24:24-81
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:24:24-81
 activity#se.ingoproduction.example.application_v1.MainActivity
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:27:9-33:20
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:27:9-33:20
 	android:name
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:27:19-47
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:27:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:28:13-32:29
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:29:17-69
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:29:25-66
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:31:17-77
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:31:27-74
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:31:27-74
 activity#se.ingoproduction.example.application_v1.CameraLayout
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:34:9-36:46
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:34:9-36:46
 	android:label
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:35:13-41
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:35:13-41
 	android:theme
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:36:13-44
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:34:19-47
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:34:19-47
 activity#se.ingoproduction.example.application_v1.ScanThePic
-ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:37:9-39:46
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:37:9-39:46
 	android:label
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:38:13-43
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:38:13-43
 	android:theme
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:39:13-44
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:39:13-44
 	android:name
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml:37:19-45
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:37:19-45
+activity#se.ingoproduction.example.application_v1.Search
+ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:40:9-42:46
+	android:label
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:41:13-35
+	android:theme
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:42:13-44
+	android:name
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml:40:19-41
 uses-sdk
-INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
-INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
+INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
+INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/a6e03b4e34ec1d392ba5b6dd591a3cca/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/a6e03b4e34ec1d392ba5b6dd591a3cca/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5068ffdf212d3dcf7871845e9609ea0d/AndroidManifest.xml:5:5-7:41
@@ -244,18 +252,18 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/antonlyngfelt/.gradl
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/42c828063d6d201fab477add202ec641/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/8ff2e64e9595f9394873531647116f5d/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/8ff2e64e9595f9394873531647116f5d/AndroidManifest.xml:20:5-44
-INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
-INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
+INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
+INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:26.1.0] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/fdaa6a4cc526a995e689211db981be77/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
-		ADDED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/src/main/AndroidManifest.xml
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/b9ab6e92814b4baf6d965f7133aea4f4/AndroidManifest.xml:23:9-26:75
 	android:exported

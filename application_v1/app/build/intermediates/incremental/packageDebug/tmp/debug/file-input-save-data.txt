@@ -1,18 +1,18 @@
 #Internal package file, do not edit.
-#Tue Dec 11 21:09:23 CET 2018
+#Wed Dec 12 14:33:19 CET 2018
 4.path=classes.dex
 8.set=DEX
 6.path=classes.dex
 0.baseType=DIRECTORY
 10.path=classes.dex
 5.baseType=DIRECTORY
-1.base=/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/transforms/dexMerger/debug/20
+1.base=/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/transforms/dexMerger/debug/15
 8.path=classes.dex
-3.base=/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/transforms/dexMerger/debug/11
+3.base=/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/transforms/dexMerger/debug/13
 4.set=DEX
-5.base=/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/transforms/dexMerger/debug/13
-7.base=/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/transforms/dexMerger/debug/15
-9.base=/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/transforms/dexMerger/debug/19
+5.base=/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/transforms/dexMerger/debug/19
+7.base=/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/transforms/dexMerger/debug/17
+9.base=/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/transforms/dexMerger/debug/11
 1.baseType=DIRECTORY
 0.set=DEX
 6.baseType=DIRECTORY
@@ -25,16 +25,16 @@
 3.path=classes.dex
 10.set=DEX
 5.path=classes.dex
-0.base=/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/transforms/dexMerger/debug/12
+0.base=/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/transforms/dexMerger/debug/12
 7.path=classes.dex
 9.path=classes.dex
 6.set=DEX
-2.base=/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/transforms/dexMerger/debug/14
-4.base=/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/transforms/dexMerger/debug/16
+2.base=/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/transforms/dexMerger/debug/21
+4.base=/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/transforms/dexMerger/debug/16
 3.baseType=DIRECTORY
-6.base=/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/transforms/dexMerger/debug/18
-10.base=/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/transforms/dexMerger/debug/21
-8.base=/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/transforms/dexMerger/debug/17
+6.base=/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/transforms/dexMerger/debug/14
+10.base=/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/transforms/dexMerger/debug/20
+8.base=/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/transforms/dexMerger/debug/18
 2.set=DEX
 8.baseType=DIRECTORY
 9.set=DEX

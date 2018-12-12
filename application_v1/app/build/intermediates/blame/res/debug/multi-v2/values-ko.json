@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
+            "outputFile": "/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "/Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/848be7e53ed2c5f8fd3df1dd3ab6066f/res/values-ko/values.xml",

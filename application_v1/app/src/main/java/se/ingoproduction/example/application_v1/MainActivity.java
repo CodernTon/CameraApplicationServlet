@@ -24,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(getInfoFromPicIntent);
     }
 
+    public void startTheSearch(View view) {
+        Intent startTheSearchintent = new Intent
+                (this, Search.class);
+        startActivity(startTheSearchintent);
+    }
+
 
 
 /*

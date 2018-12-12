@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/antonlyngfelt/Documents/AndroidStudioProjects/application_v1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/antonlyngfelt/Documents/School/TIG167/git_dir/kemiapp/application_v1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/antonlyngfelt/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d61c3351b182f8e85ab043f5920a2e12/res/values-v24/values-v24.xml",

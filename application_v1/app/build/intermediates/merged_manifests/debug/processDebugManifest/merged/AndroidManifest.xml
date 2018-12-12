@@ -52,6 +52,10 @@
             android:label="ScanThePicture"
             android:theme="@style/AppTheme" />
         <activity
+            android:name="se.ingoproduction.example.application_v1.Search"
+            android:label="Search"
+            android:theme="@style/AppTheme" />
+        <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
