@@ -30,8 +30,8 @@ public class ChemicalsServlet extends HttpServlet {
   throws ServletException, IOException {
     response.setCharacterEncoding(UTF_8.name());
     PrintWriter out = response.getWriter();
-    out.println("<html><head><title>Chemicals servlet</title></head>");
-    out.println("<body>");
+    //out.println("<html><head><title>Chemicals servlet</title></head>");
+    //out.println("<body>");
 
     Map<String, String[]> map =
     request.getParameterMap();
@@ -76,7 +76,7 @@ public class ChemicalsServlet extends HttpServlet {
   String JSONString = formatter.format(chemicals);
   out.println(JSONString);
 
-  out.println("</body></html>");
+  //out.println("</body></html>");
   out.close();
 }
 
