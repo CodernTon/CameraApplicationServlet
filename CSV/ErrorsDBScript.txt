@@ -1,0 +1,74 @@
+---------------------- new parse
+Error: near line 19: near "(": syntax error
+Error: near line 66: near "'-hydroxi-2,3'": syntax error
+Error: near line 369: UNIQUE constraint failed: chemicals.substance
+Error: near line 384: UNIQUE constraint failed: chemicals.substance
+Error: near line 425: UNIQUE constraint failed: chemicals.substance
+Error: near line 465: UNIQUE constraint failed: chemicals.substance
+Error: near line 491: near "''": syntax error
+Error: near line 631: UNIQUE constraint failed: chemicals.substance
+Error: near line 649: near "'-dibrom-3'": syntax error
+Error: near line 694: near "dibensoat": syntax error
+Error: near line 1039: near "',5'": syntax error
+Error: near line 1063: near "[N-(karboxilatmetyl)aminoacetat]": syntax error
+Error: near line 1306: near "'-diylbis(azo)]bis[N-(4-klorfenyl)-3-oxobutyramid]'": syntax error
+Error: near line 1307: near "'-diyldiazo]bis[4,5-dihydro-5-oxo-1-(4-sulfofenyl)-1H-pyrazole-3-karboxylat]'": syntax error
+Error: near line 1309: near "'-diylbis(azo)]bis(7-hydroxinaftalensulfonat)'": syntax error
+Error: near line 1310: unrecognized token: "]"
+Error: near line 1311: unrecognized token: "]"
+Error: near line 1312: unrecognized token: "]"
+Error: near line 1313: unrecognized token: "]"
+Error: near line 1314: unrecognized token: "]"
+Error: near line 1315: near "azo": syntax error
+Error: near line 1317: near "'-diylbis(azo)]bis(4-aminonaftalen-1-sulfonat)'": syntax error
+Error: near line 1318: near "bis": syntax error
+Error: near line 1320: near "'-diyl)bis(azo)]bis[4-amino-5-hydroxy-, tetralithium salt'": syntax error
+Error: near line 1321: near "'-diyl)bis(azo)]bis[4-amino-5-hydroxy-, sodium salt'": syntax error
+Error: near line 1322: near "'-diyl)bis(azo)]bis[4-amino-5-hydroxy-, sodium salt, compd. with 2,2'": syntax error
+Error: near line 1324: near "'-diyl)bis(azo)]bis[4-amino-5-hydroxi-1,3-naftalendisulfonat'": syntax error
+Error: near line 1325: near "'-diyl)diazo]bis[3-hydroxi-N-1-naftylnaftalen-2-karboxamid]'": syntax error
+Error: near line 1326: near "'-diyl)bis(azo)]bis[4-amino-5-hydroxi-1,3-naftalendisulfonat'": syntax error
+Error: near line 1327: near "bis": syntax error
+Error: near line 1329: near "bis": syntax error
+Error: near line 1331: near "','": syntax error
+Error: near line 1336: unrecognized token: "]"
+Error: near line 1337: near "[2,6'-bibenzothiazole]": syntax error
+Error: near line 1343: near "'-diyl)bis(azo)]bis[3-hydroxi-N-fenylnaftalen-2-karboxamid]'": syntax error
+Error: near line 1344: near "'-diyl)bis(azo)]bis[N-(4-klorfenyl)-3-oxobutanamid]'": syntax error
+Error: near line 1345: near "','": syntax error
+Error: near line 1353: near "','": syntax error
+Error: near line 1359: near "'-diyl)bis(azo)]bis[5-amino-4-hydroxinaftalen-2,7-disulfonat]'": syntax error
+Error: near line 1360: near "'-diyl)bis(azo)]bis[4,5-dihydroxi-'": syntax error
+Error: near line 1361: near "'-diyl)bis(azo)]bis[4-amino-5-hydroxinaftalen-1,3-disulfonat]'": syntax error
+Error: near line 1362: near "bis": syntax error
+Error: near line 1364: near "bis": syntax error
+Error: near line 1366: near "'-diyl)bis(azo)]bis[4,5-dihydro-5-oxo-1-fenyl-1H-pyrazol-3-karboxylat]'": syntax error
+Error: near line 1367: near "'-diyl)bis(azo)]bis[3-oxo-N-fenylbutyramid]'": syntax error
+Error: near line 1368: near "'-diyl)bis(azo)]bis[5-amino-4-hydroxinaftalen-2,7-disulfonat]'": syntax error
+Error: near line 1369: near "'-diyl)bis(azo)]bis(4-aminonaftalen-1-sulfonat)'": syntax error
+Error: near line 1370: near "'-diyl)bis(azo)]bis[N-(klorfenyl)-3-oxo-butanamid'": syntax error
+Error: near line 1371: near "'-diyl)bis(azo)]bis[2,4-dihydro-5-metyl-2-fenyl-3H-pyrazol-3-on]'": syntax error
+Error: near line 1372: near "'-diyl)bis(azo)]bis[N-(2-metylfenyl)-3-oxobutyramid]'": syntax error
+Error: near line 1373: near "'-diyl)diazo]bis[5-amino-4-hydroxynaphthalene-2,7-disulphonic] acid, sodium salt'": syntax error
+Error: near line 1374: near "'-diyl)diazo]bis[5-amino-4-hydroxynaphthalene-2,7-disulphonic] acid, sodium salt, compound with 2,2'": syntax error
+Error: near line 1376: near "'-diyl)bis(azo)]bis[N-(2-klorfenyl)-3-oxobutyramid]'": syntax error
+Error: near line 1377: near "'-diyl)bis(azo)]bis[N-(2,4-dimetylfenyl)-3-oxobutyramid]'": syntax error
+Error: near line 1378: near "'-diyl)bis(azo)]bis[5-(acetylamino)-4-hydroxy-, tetrasodium salt'": syntax error
+Error: near line 1379: near "'-diyl)bis(azo)]bis[3-hydroxy-, tetrasodium salt'": syntax error
+Error: near line 1380: near "[1,1'-biphenyl]": syntax error
+Error: near line 1392: near "','": syntax error
+Error: near line 2068: near "iminno": syntax error
+Error: near line 2081: near "''": syntax error
+Error: near line 2113: near "','": syntax error
+Error: near line 2118: near "'-diyl)bis(azo)]bis[N-(2-metylfenyl)-3-oxobutyramid]'": syntax error
+Error: near line 2119: near "'-diyl)bis(azo)]bis[N-(4-klor-2,5-dimetoxifenyl)-3-oxobutyramid]'": syntax error
+Error: near line 2196: near "'-sulfonato(6-amino-2-[4-(2-hydroxi-1-naftylazo)fenylsulfonylamino]pyrimidin-5-azo)benzen-2'": syntax error
+Error: near line 2214: near "azo": syntax error
+Error: near line 2216: near "(": syntax error
+Error: near line 2222: near "157627": syntax error
+Error: near line 2228: near "[6-klor-4-[6-(4-vinylsulfonylfenylazo)-2,7-disulfonsyra-5-hydroxinaft-4-ylamino]": syntax error
+Error: near line 2259: near "''": syntax error
+Error: near line 2292: near "''": syntax error
+Error: near line 2302: unrecognized token: "]"
+Error: near line 2333: near "[4- isocyanatbensen]": syntax error
+Error: near line 2343: unrecognized token: "]"
