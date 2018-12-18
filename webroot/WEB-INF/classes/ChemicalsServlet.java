@@ -39,35 +39,36 @@ public class ChemicalsServlet extends HttpServlet {
     List<String> names = new ArrayList<>();
 
     for (Map.Entry<String, String[]> entry : map.entrySet()) {
-      out.println(" * key / value: " + entry.getKey() + " / " + entry.getValue()[0] + "<br />");
-      if (entry.getKey().equals("name")) {
+      //out.println(" * key / value: " + entry.getKey() + " / " + entry.getValue()[0] + "<br />");
+      if (entry.getKey().equals("substance")) {
         for (int i=0; i<entry.getValue().length; i++) {
           String value = entry.getValue()[i];
-          out.println(" ----" + value);
+          //out.println(" ----" + value);
           names.add(value);
+          System.out.println("   substance:" + value);
         }
       }
     }
-    System.out.println("   names:" + names);
 
     try{
-      Connection con = DriverManager.getConnection("jdbc:sqlite:kemi.db");
+      Connection con = DriverManager.getConnection("jdbc:sqlite:CSV/chems.db");
       Statement stm  = con.createStatement();
       for (String chemical : names) {
         StringBuilder sb = new StringBuilder();
-        sb.append("SELECT * from chemical WHERE name='");
+        sb.append("SELECT * from chemicals WHERE substance='");
         sb.append(chemical);
         sb.append("';");
         String sql = sb.toString();
         System.out.println(sql);
         ResultSet rs   = stm.executeQuery(sql);
-        System.out.println("SQL: " + sql );
         while(rs.next()){
-          Chemical chem = new Chemical(rs.getString("name"), rs.getString("chemical_group"));
+          Chemical chem = new Chemical.ChemicalBuilder(rs.getString("substance"), rs.getString("criteria"))
+          .casNr(rs.getString("CAS"))
+          .egNr(rs.getString("EG"))
+          .prioLevel(rs.getString("prio_level"))
+          .build();
           chemicals.add(chem);
-          System.out.println(" * " + rs.getString("name"));
         }
-        System.out.println();
       }
     }catch(SQLException sqle)
     {out.println("Database error: " + sqle.getMessage());
