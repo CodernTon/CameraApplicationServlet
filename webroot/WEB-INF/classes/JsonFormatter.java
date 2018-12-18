@@ -14,7 +14,10 @@ public class JsonFormatter {
   public JSONObject JSONChemical(Chemical chemical) {
     JSONObject JSONChemical = new JSONObject();
     JSONChemical.put("name", chemical.name());
-    JSONChemical.put("chemical_group", chemical.chemGroup());
+    JSONChemical.put("cas_nr", chemical.casnr());
+    JSONChemical.put("eg_nr", chemical.egnr());
+    JSONChemical.put("priority_level", chemical.priolevel());
+    JSONChemical.put("criteria", chemical.criteria());
     return JSONChemical;
   }
 
