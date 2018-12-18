@@ -1,7 +1,7 @@
 //package domain;
 
 public class Chemical {
-  private String name;
+  private String substance;
   private String casnr;
   private String egnr;
   private String priolevel;
@@ -9,14 +9,14 @@ public class Chemical {
 
 
   public static class ChemicalBuilder {
-    private String name;
+    private String substance;
     private String casnr;
     private String egnr;
     private String priolevel;
     private String criteria;
 
-    public ChemicalBuilder(String name, String criteria){
-    this.name = name;
+    public ChemicalBuilder(String substance, String criteria){
+    this.substance = substance;
     this.criteria = criteria;
   }
 
@@ -41,15 +41,15 @@ public class Chemical {
   }
 
   private Chemical(ChemicalBuilder cb) {
-    this.name = cb.name;
+    this.substance = cb.substance;
     this.casnr = cb.casnr;
     this.egnr = cb.egnr;
     this.priolevel = cb.priolevel;
     this.criteria = cb.criteria;
   }
 
-  public String name() {
-    return name;
+  public String substance() {
+    return substance;
   }
   public String casnr() {
     return casnr;
@@ -66,7 +66,7 @@ public class Chemical {
 
   @Override
   public String toString() {
-    return "Name: " + this.name + "\n" +
+    return "Substance: " + this.substance + "\n" +
     "Criteria: " + this.criteria + "\n" +
     "CAS number: " + this.casnr + "\n" +
     "EG number: " + this.egnr + "\n" +
