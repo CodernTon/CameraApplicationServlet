@@ -61,6 +61,10 @@ public class ChemicalsServlet extends HttpServlet {
         String sql = sb.toString();
         System.out.println(sql);
         ResultSet rs   = stm.executeQuery(sql);
+        if (!rs.isBeforeFirst()) { //isBeforeFirst throws SQLException
+          //what to do if resultset is empty? Create message/JSON with empty array?
+        }
+
         while(rs.next()){
           Chemical chem = new Chemical.ChemicalBuilder(rs.getString("substance"), rs.getString("criteria"))
           .casNr(rs.getString("CAS"))
@@ -72,12 +76,14 @@ public class ChemicalsServlet extends HttpServlet {
       }
     }catch(SQLException sqle)
     {out.println("Database error: " + sqle.getMessage());
+  } for (Chemical chemical : chemicals) {
+    System.out.println(chemical);
   }
-  JsonFormatter formatter = new JsonFormatter();
+  /*JsonFormatter formatter = new JsonFormatter();
   String JSONString = formatter.format(chemicals);
   out.println(JSONString);
 
-  //out.println("</body></html>");
+  //out.println("</body></html>");*/
   out.close();
 }
 
