@@ -21,15 +21,34 @@ public class JsonFormatter {
     return JSONChemical;
   }
 
-  public String format(List<Chemical> chemicals) {
-    JSONArray JSON = new JSONArray();
-    for (Chemical chemical : chemicals) {
-      JSON.put(JSONChemical(chemical));
-    }
-    return JSON.toString(2);
+  public JSONObject JSONMessage(Message message) {
+    JSONObject JSONMessage = new JSONObject();
+    JSONMessage.put("substance name", message.substanceName());
+    JSONMessage.put("DBinformation", message.substanceInfo());
+    return JSONMessage;
   }
 
-//  String JSONString = format(chemicals);
-//s§  System.out.println(JSONString);
+  public String formatChemical(List<Chemical> chemicals) {
+    if (chemicals.isEmpty()) {
+      return null;
+    } else {
+    JSONArray JSONChemical = new JSONArray();
+    for (Chemical chemical : chemicals) {
+      JSONChemical.put(JSONChemical(chemical));
+    }
+    return JSONChemical.toString(2);
+  }
+}
 
+  public String formatMessage(List<Message> messages) {
+    if (messages.isEmpty()) {
+      return null;
+    } else {
+    JSONArray JSONMessage = new JSONArray();
+    for (Message message : messages) {
+      JSONMessage.put(JSONMessage(message));
+    }
+    return JSONMessage.toString(2);
+  }
+  }
 }
