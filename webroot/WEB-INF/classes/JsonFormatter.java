@@ -21,12 +21,6 @@ public class JsonFormatter {
     return JSONChemical;
   }
 
-  public JSONObject JSONMessage(Message message) {
-    JSONObject JSONMessage = new JSONObject();
-    JSONMessage.put("substance name", message.substanceName());
-    JSONMessage.put("DBinformation", message.substanceInfo());
-    return JSONMessage;
-  }
 
   public String formatChemical(List<Chemical> chemicals) {
     if (chemicals.isEmpty()) {
@@ -39,16 +33,4 @@ public class JsonFormatter {
     return JSONChemical.toString(2);
   }
 }
-
-  public String formatMessage(List<Message> messages) {
-    if (messages.isEmpty()) {
-      return null;
-    } else {
-    JSONArray JSONMessage = new JSONArray();
-    for (Message message : messages) {
-      JSONMessage.put(JSONMessage(message));
-    }
-    return JSONMessage.toString(2);
-  }
-  }
 }
