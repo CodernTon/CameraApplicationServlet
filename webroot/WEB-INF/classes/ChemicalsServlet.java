@@ -38,6 +38,7 @@ public class ChemicalsServlet extends HttpServlet {
     List<Chemical> chemicals = new ArrayList<>();
     List<String> names = new ArrayList<>();
     List<String> messages = new ArrayList<>();
+    ServletHelper sh = new ServletHelper();
 
     for (Map.Entry<String, String[]> entry : map.entrySet()) {
       //out.println(" * key / value: " + entry.getKey() + " / " + entry.getValue()[0] + "<br />");
@@ -63,14 +64,7 @@ public class ChemicalsServlet extends HttpServlet {
         System.out.println(sql);
         ResultSet rs   = stm.executeQuery(sql);
         if (!rs.isBeforeFirst()) {
-          StringBuilder messagebuilder = new StringBuilder();
-          messagebuilder.append("{ \n");
-          messagebuilder.append("\r \"message\": ");
-          messagebuilder.append("\"");
-          messagebuilder.append(chemical);
-          messagebuilder.append(" was not found in database\"");
-          messagebuilder.append("\n }");
-          String message = messagebuilder.toString();
+          String message = sh.messageBuilder(chemical);
           messages.add(message);
         }
 
@@ -85,19 +79,16 @@ public class ChemicalsServlet extends HttpServlet {
       }
     }catch(SQLException sqle)
     {out.println("Database error: " + sqle.getMessage());
-  } /*for (String message : messages) {
-    out.println(message);
-  }for (Chemical chemical : chemicals) {
-    System.out.println(chemical);
-  }*/
+  }
+
   JsonFormatter formatter = new JsonFormatter();
   StringBuilder sbJSONString = new StringBuilder();
   if (messages.isEmpty()) {
-    sbJSONString.append("[ \n \r { \n \r \"message\": \"all chemicals found in database\" \n } \n ] \n");
+    sbJSONString.append("");
   } else {
   sbJSONString.append(messages);
 } if (chemicals.isEmpty()) {
-  sbJSONString.append("TEST EMPTY CHEMICALS LIST");
+  sbJSONString.append("");
 } else {
   sbJSONString.append(formatter.formatChemical(chemicals));
 }
