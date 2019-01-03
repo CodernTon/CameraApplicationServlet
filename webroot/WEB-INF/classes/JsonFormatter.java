@@ -23,7 +23,7 @@ public class JsonFormatter {
 
   public JSONObject JSONMessage(Message message) {
     JSONObject JSONMessage = new JSONObject();
-    JSONMessage.put("substance name", message.name());
+    JSONMessage.put("name", message.name());
     JSONMessage.put("info", message.info());
     return JSONMessage;
   }
