@@ -13,8 +13,6 @@ import java.sql.*;
 
 import org.json.*;
 
-//import domain.Chemical;
-
 public class ChemicalsServlet extends HttpServlet {
 
   public void init() throws ServletException {
@@ -37,7 +35,8 @@ public class ChemicalsServlet extends HttpServlet {
     request.getParameterMap();
     List<Chemical> chemicals = new ArrayList<>();
     List<String> names = new ArrayList<>();
-    List<String> messages = new ArrayList<>();
+    //List<String> messages = new ArrayList<>();
+    List<Message> messages = new ArrayList<>();
     ServletHelper sh = new ServletHelper();
 
     for (Map.Entry<String, String[]> entry : map.entrySet()) {
@@ -64,15 +63,17 @@ public class ChemicalsServlet extends HttpServlet {
         System.out.println(sql);
         ResultSet rs   = stm.executeQuery(sql);
         if (!rs.isBeforeFirst()) {
-          StringBuilder messagebuilder = new StringBuilder();
+          Message msg = new Message(chemical, "was not found in database");
+          /*StringBuilder messagebuilder = new StringBuilder();
           messagebuilder.append("\n { \n");
           messagebuilder.append("\r \"message\": ");
           messagebuilder.append("\"");
           messagebuilder.append(chemical);
           messagebuilder.append(" was not found in database\"");
           messagebuilder.append("\n } \n");
-          String message = messagebuilder.toString();
-          messages.add(message);
+          String msg = messagebuilder.toString();*/
+          //String message = sh.createMessage(chemical);
+          messages.add(msg);
         }
 
         while(rs.next()){
@@ -93,13 +94,14 @@ public class ChemicalsServlet extends HttpServlet {
   if (messages.isEmpty()) {
     sbJSONString.append("");
   } else {
-  sbJSONString.append(messages);
+  sbJSONString.append(formatter.formatMessage(messages));
 } if (chemicals.isEmpty()) {
   sbJSONString.append("");
 } else {
   sbJSONString.append(formatter.formatChemical(chemicals));
 }
   String JSONString = sbJSONString.toString();
+  //String test = sh.createJSON(messages, chemicals);
   out.println(JSONString);
 
   //out.println("</body></html>");
