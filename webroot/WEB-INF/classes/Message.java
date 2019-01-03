@@ -1,18 +1,18 @@
 
 public class Message {
-  private String substanceName;
-  private String substanceInfo;
+  private String name;
+  private String info;
 
-  public Message(String substanceName, String substanceInfo) {
-    this.substanceName = substanceName;
-    this.substanceInfo = substanceInfo;
+  public Message(String name, String info) {
+    this.name = name;
+    this.info = info;
   }
 
-  public String substanceName() {
-    return substanceName;
+  public String name() {
+    return name;
   }
 
-  public String substanceInfo() {
-    return substanceInfo;
+  public String info() {
+    return info;
   }
 }
