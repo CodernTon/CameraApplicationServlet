@@ -21,6 +21,13 @@ public class JsonFormatter {
     return JSONChemical;
   }
 
+  public JSONObject JSONMessage(Message message) {
+    JSONObject JSONMessage = new JSONObject();
+    JSONMessage.put("substance name", message.name());
+    JSONMessage.put("info", message.info());
+    return JSONMessage;
+  }
+
 
   public String formatChemical(List<Chemical> chemicals) {
     if (chemicals.isEmpty()) {
@@ -33,4 +40,14 @@ public class JsonFormatter {
     return JSONChemical.toString(2);
   }
 }
+
+public String formatMessage(List<Message> messages) {
+  JSONArray JSONMessage = new JSONArray();
+  for (Message message : messages) {
+    JSONMessage.put(JSONMessage(message));
+  }
+  return JSONMessage.toString(2);
+
+}
+
 }
