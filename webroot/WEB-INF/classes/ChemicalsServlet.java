@@ -64,7 +64,14 @@ public class ChemicalsServlet extends HttpServlet {
         System.out.println(sql);
         ResultSet rs   = stm.executeQuery(sql);
         if (!rs.isBeforeFirst()) {
-          String message = sh.messageBuilder(chemical);
+          StringBuilder messagebuilder = new StringBuilder();
+          messagebuilder.append("\n { \n");
+          messagebuilder.append("\r \"message\": ");
+          messagebuilder.append("\"");
+          messagebuilder.append(chemical);
+          messagebuilder.append(" was not found in database\"");
+          messagebuilder.append("\n } \n");
+          String message = messagebuilder.toString();
           messages.add(message);
         }
 
