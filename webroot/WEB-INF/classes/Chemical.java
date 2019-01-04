@@ -1,5 +1,7 @@
-//package domain;
-
+/*This is the main Java-class that represents chemicals from the database.
+The class contains a nested inner class ChemicalBuilder and a private Chemical
+constructor in order for developers to use the Builder rather than the constructor.
+*/
 public class Chemical {
   private String substance;
   private String casnr;
@@ -63,7 +65,7 @@ public class Chemical {
   public String criteria() {
     return criteria;
   }
-
+  
   @Override
   public String toString() {
     return "Substance: " + this.substance + "\n" +
