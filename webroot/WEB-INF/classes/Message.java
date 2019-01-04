@@ -1,3 +1,6 @@
+/*This is the Message-class. Messages about chemicals that aren't found in
+the database are stored in these objects.
+*/
 
 public class Message {
   private String name;
