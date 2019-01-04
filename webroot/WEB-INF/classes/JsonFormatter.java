@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
@@ -11,6 +10,7 @@ import org.json.*;
 
 public class JsonFormatter {
 
+  //Creates a JSONObject from a Chemical-object.
   public JSONObject JSONChemical(Chemical chemical) {
     JSONObject JSONChemical = new JSONObject();
     JSONChemical.put("substance", chemical.substance());
@@ -21,6 +21,7 @@ public class JsonFormatter {
     return JSONChemical;
   }
 
+  //Creates a JSONObject from a message-object.
   public JSONObject JSONMessage(Message message) {
     JSONObject JSONMessage = new JSONObject();
     JSONMessage.put("name", message.name());
@@ -28,49 +29,30 @@ public class JsonFormatter {
     return JSONMessage;
   }
 
-
-  /*public String formatChemical(List<Chemical> chemicals) {
-    if (chemicals.isEmpty()) {
-      return null;
-    } else {
-    JSONArray JSONChemical = new JSONArray();
-    for (Chemical chemical : chemicals) {
-      JSONChemical.put(JSONChemical(chemical));
+  //Creates a JSONArray of JSONMessage-objects
+  public JSONArray createMessageArray(List<Message> messages) {
+    JSONArray JSONMessageArray = new JSONArray();
+    for (Message message : messages) {
+      JSONMessageArray.put(JSONMessage(message));
     }
-    return JSONChemical.toString(2);
+    return JSONMessageArray;
   }
-}
 
-public String formatMessage(List<Message> messages) {
-  JSONArray JSONMessage = new JSONArray();
-  for (Message message : messages) {
-    JSONMessage.put(JSONMessage(message));
+  //Creates a JSONArray of JSONChemical-objects
+  public JSONArray createChemicalArray(List<Chemical> chemicals) {
+    JSONArray JSONChemicalArray = new JSONArray();
+    for (Chemical chemical : chemicals) {
+      JSONChemicalArray.put(JSONChemical(chemical));
+    }
+    return JSONChemicalArray;
   }
-  return JSONMessage.toString(2);
 
-}*/
-
- public JSONArray createMessageArray(List<Message> messages) {
-   JSONArray JSONMessage = new JSONArray();
-   for (Message message : messages) {
-     JSONMessage.put(JSONMessage(message));
-   }
-   return JSONMessage;
- }
-
- public JSONArray createChemicalArray(List<Chemical> chemicals) {
-   JSONArray JSONChemical = new JSONArray();
-   for (Chemical chemical : chemicals) {
-     JSONChemical.put(JSONChemical(chemical));
-   }
-   return JSONChemical;
- }
-
- public String createJSONString(JSONArray jsonA, JSONArray jsonB) {
-   JSONObject jo = new JSONObject();
-   jo.put("messages:", jsonA);
-   jo.put("chemicals found:", jsonB);
-   return jo.toString(2);
- }
-
+  //Creates the main JSONObject that contains the JSONArrays and  makes import junit.framework.TestCase;
+  //into a String-object.
+  public String createJSONString(JSONArray jsonA, JSONArray jsonB) {
+    JSONObject jo = new JSONObject();
+    jo.put("messages:", jsonA);
+    jo.put("chemicals found:", jsonB);
+    return jo.toString(2);
+  }
 }
