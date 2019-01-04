@@ -29,7 +29,7 @@ public class JsonFormatter {
   }
 
 
-  public String formatChemical(List<Chemical> chemicals) {
+  /*public String formatChemical(List<Chemical> chemicals) {
     if (chemicals.isEmpty()) {
       return null;
     } else {
@@ -48,6 +48,29 @@ public String formatMessage(List<Message> messages) {
   }
   return JSONMessage.toString(2);
 
-}
+}*/
+
+ public JSONArray createMessageArray(List<Message> messages) {
+   JSONArray JSONMessage = new JSONArray();
+   for (Message message : messages) {
+     JSONMessage.put(JSONMessage(message));
+   }
+   return JSONMessage;
+ }
+
+ public JSONArray createChemicalArray(List<Chemical> chemicals) {
+   JSONArray JSONChemical = new JSONArray();
+   for (Chemical chemical : chemicals) {
+     JSONChemical.put(JSONChemical(chemical));
+   }
+   return JSONChemical;
+ }
+
+ public String createJSONString(JSONArray jsonA, JSONArray jsonB) {
+   JSONObject jo = new JSONObject();
+   jo.put("messages:", jsonA);
+   jo.put("chemicals found:", jsonB);
+   return jo.toString(2);
+ }
 
 }
