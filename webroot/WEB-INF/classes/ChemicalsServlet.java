@@ -71,8 +71,8 @@ public class ChemicalsServlet extends HttpServlet {
           messagebuilder.append(chemical);
           messagebuilder.append(" was not found in database\"");
           messagebuilder.append("\n } \n");
-          String msg = messagebuilder.toString();*/
-          //String message = sh.createMessage(chemical);
+          String msg = messagebuilder.toString();
+          String msg = sh.createMessage(chemical);*/
           messages.add(msg);
         }
 
@@ -91,7 +91,12 @@ public class ChemicalsServlet extends HttpServlet {
 
   JsonFormatter formatter = new JsonFormatter();
   StringBuilder sbJSONString = new StringBuilder();
-  if (messages.isEmpty()) {
+  JSONArray jsonMessageArray = formatter.createMessageArray(messages);
+  JSONArray jsonChemicalArray = formatter.createChemicalArray(chemicals);
+  String testB = formatter.createJSONString(jsonMessageArray, jsonChemicalArray);
+  out.println(testB);
+
+  /*if (messages.isEmpty()) {
     sbJSONString.append("");
   } else {
   sbJSONString.append(formatter.formatMessage(messages));
@@ -100,9 +105,9 @@ public class ChemicalsServlet extends HttpServlet {
 } else {
   sbJSONString.append(formatter.formatChemical(chemicals));
 }
-  String JSONString = sbJSONString.toString();
+  String test = sbJSONString.toString();
   //String test = sh.createJSON(messages, chemicals);
-  out.println(JSONString);
+  out.println(test);*/
 
   //out.println("</body></html>");
   out.close();
