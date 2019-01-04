@@ -1,3 +1,4 @@
+//The servlet that receives the URL, checks the database and returns JSON.
 
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -15,6 +16,7 @@ import org.json.*;
 
 public class ChemicalsServlet extends HttpServlet {
 
+  //Loads the JDBC driver to get access to database.
   public void init() throws ServletException {
     try{
       Class.forName("org.sqlite.JDBC");
@@ -28,25 +30,23 @@ public class ChemicalsServlet extends HttpServlet {
   throws ServletException, IOException {
     response.setCharacterEncoding(UTF_8.name());
     PrintWriter out = response.getWriter();
-    //out.println("<html><head><title>Chemicals servlet</title></head>");
-    //out.println("<body>");
 
-    Map<String, String[]> map =
-    request.getParameterMap();
+    Map<String, String[]> map =request.getParameterMap();
     List<Chemical> chemicals = new ArrayList<>();
-    List<String> names = new ArrayList<>();
-    //List<String> messages = new ArrayList<>();
+    List<String> values = new ArrayList<>();
     List<Message> messages = new ArrayList<>();
-    ServletHelper sh = new ServletHelper();
 
+    //Loops through the parameters in the URL request to get all values with the key "substance".
+    //Then stores the values in the ArrayList values.
     for (Map.Entry<String, String[]> entry : map.entrySet()) {
       //out.println(" * key / value: " + entry.getKey() + " / " + entry.getValue()[0] + "<br />");
+      //this was a check to see which kay/value pairs we got.
       if (entry.getKey().equals("substance")) {
         for (int i=0; i<entry.getValue().length; i++) {
           String value = entry.getValue()[i];
           //out.println(" ----" + value);
-          names.add(value);
-          System.out.println("   substance:" + value);
+          //this was a check to see that the value was stored propperly.
+          values.add(value);
         }
       }
     }
@@ -54,28 +54,23 @@ public class ChemicalsServlet extends HttpServlet {
     try{
       Connection con = DriverManager.getConnection("jdbc:sqlite:CSV/chems.db");
       Statement stm  = con.createStatement();
-      for (String chemical : names) {
+      //this for-loop takes the values stored in ArrayList names and creates an SQL-query for each.
+      for (String chemical : values) {
         StringBuilder sb = new StringBuilder();
         sb.append("SELECT * from chemicals WHERE substance='");
         sb.append(chemical);
         sb.append("';");
         String sql = sb.toString();
-        System.out.println(sql);
+        //This was to check what was passed to the database.
+        //System.out.println(sql);
         ResultSet rs   = stm.executeQuery(sql);
+        //if the resultset is empty the client needs to know this.
+        //This part of the code creates a Message-object to let the client know.
         if (!rs.isBeforeFirst()) {
-          Message msg = new Message(chemical, "was not found in database");
-          /*StringBuilder messagebuilder = new StringBuilder();
-          messagebuilder.append("\n { \n");
-          messagebuilder.append("\r \"message\": ");
-          messagebuilder.append("\"");
-          messagebuilder.append(chemical);
-          messagebuilder.append(" was not found in database\"");
-          messagebuilder.append("\n } \n");
-          String msg = messagebuilder.toString();
-          String msg = sh.createMessage(chemical);*/
-          messages.add(msg);
+          Message notFoundMsg = new Message(chemical, "was not found in database");
+          messages.add(notFoundMsg);
         }
-
+        //This while-loop creates a Chemical-object from the resultset by using a Builder.
         while(rs.next()){
           Chemical chem = new Chemical.ChemicalBuilder(rs.getString("substance"), rs.getString("criteria"))
           .casNr(rs.getString("CAS"))
@@ -85,32 +80,15 @@ public class ChemicalsServlet extends HttpServlet {
           chemicals.add(chem);
         }
       }
-    }catch(SQLException sqle)
-    {out.println("Database error: " + sqle.getMessage());
+    } catch(SQLException sqle) {
+      out.println("Database error: " + sqle.getMessage());
+    }
+    //This part formats the Message-objects and Chemical-objects to JSON.
+    JsonFormatter formatter = new JsonFormatter();
+    JSONArray jsonMessageArray = formatter.createMessageArray(messages);
+    JSONArray jsonChemicalArray = formatter.createChemicalArray(chemicals);
+    String JSONString = formatter.createJSONString(jsonMessageArray, jsonChemicalArray);
+    out.println(JSONString);
+    out.close();
   }
-
-  JsonFormatter formatter = new JsonFormatter();
-  StringBuilder sbJSONString = new StringBuilder();
-  JSONArray jsonMessageArray = formatter.createMessageArray(messages);
-  JSONArray jsonChemicalArray = formatter.createChemicalArray(chemicals);
-  String testB = formatter.createJSONString(jsonMessageArray, jsonChemicalArray);
-  out.println(testB);
-
-  /*if (messages.isEmpty()) {
-    sbJSONString.append("");
-  } else {
-  sbJSONString.append(formatter.formatMessage(messages));
-} if (chemicals.isEmpty()) {
-  sbJSONString.append("");
-} else {
-  sbJSONString.append(formatter.formatChemical(chemicals));
-}
-  String test = sbJSONString.toString();
-  //String test = sh.createJSON(messages, chemicals);
-  out.println(test);*/
-
-  //out.println("</body></html>");
-  out.close();
-}
-
 }
